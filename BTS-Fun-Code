@@ -1,0 +1,132 @@
+import random
+import time
+
+print("💜 Welcome to the BTS Fun Quiz 💜")
+print("=" * 40)
+
+name = input("Enter your name: ")
+
+print(f"\nHello {name} Let's see how much you know about BTS!")
+print("Get ready...💜")
+
+time.sleep(1)
+
+score = 0
+
+# BTS Members
+members = [
+    "RM",
+    "Jin",
+    "SUGA",
+    "J-hope",
+    "Jimin",
+    "V",
+    "Jungkook",
+]
+
+print("\nBts has 7 amazing members:")
+for member in members:
+    print("💜", member)
+
+print("\nLet's start the quiz!")
+print("=" * 40)
+
+# Question 1
+print("\n1. Who is the leasder of bts?")
+answer = input("Your answer: ")
+
+if answer.lower() == "rm":
+    print("✅ correct! RM is the leader!")
+    score += 1
+else:
+    print("❌ Not quite! The answer is RM.")
+
+# Question 2
+print("\n2. Which BTS member is know as 'WorldWide Handsome'?")
+answer = input("Your answer: ")
+
+if answer.lower() == "jin":
+    print("✅ Correct! It's Jin!")
+    score += 1
+else:
+    print("❌ The answer is Jin.")
+
+# Question 3
+print("\n3. Which member is know for his love for dance and sunshine personality?")
+answer = input("Your answer: ")
+
+if answer .lower() in ["j-hope", "jhope", "hope"]:
+    print("✅ Correct! It's j-hope!")
+    score +=1
+else:
+    print("❌ The answer is j-hope.")
+
+#Question 4
+print("\n4. Which member is know for his deep voice?")
+answer = input("Your answer: ")
+
+if answer.lower() == "v":
+    print("✅ Correct! It's V!")
+    score += 1
+else:
+    print("❌ The answer is V.")
+
+# Question 5
+print("\n5. Which member is famous for his dancing and singing?")
+answer = input("Your answe: ")
+
+if answer.lower() == "jimin":
+    print("✅ Correct! It's Jimin!")
+    score +=1
+else:
+    print("❌ The answer is Jimin.")
+
+# Question 6 
+print("\n6. Which BTS member is the youngest?")
+answer = input("Your answer: ")
+
+if answer.lower() in ["Jungkook", "jk"]:
+    print("✅ Correct! It's Jungkook!")
+    score +=1
+else:
+    print("❌ The answer id Jungkook.")
+
+# Question 7
+print("\n7. Which member is known by the stage name SUGA?")
+answer = input("Your answer: ")
+
+if answer.lower() == "suga":
+    print("✅ Correct! It's SUGA!")
+    score += 1
+else:
+    print("❌ The answer is SUGA.")
+
+# Final Score
+print("\n" + "=" * 40)
+print("💜 QUIZ COMPLETE 💜")
+print("=" * 40)
+
+print(f"Your score: {score}/7")
+
+if score == 7:
+    print("🏆 PERFECT SCORE! You are a true ARMY! 💜")
+elif score >= 5:
+    print("🌟 Amazing! You know BTS really well! 💜")
+elif score >= 3:
+    print("😊 Good job! Keep learning about BTS!")
+else:
+    print("💜 Don't worry! Listen to more BTS and try again!")
+
+# Random member
+random_member = random.choice(members)
+
+print("\n🎁 Your random BTS member of the day is...")
+time.sleep(1)
+print(f"💜 {random_member} 💜")
+
+print(f"\nThank you for playing, {name}! 💜")
+print("BTS + Python = 💜✨")
+
+
+
+    
